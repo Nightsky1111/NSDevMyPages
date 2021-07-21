@@ -1,0 +1,73 @@
+a{
+    text-decoration: none;
+    color: gray;
+}
+:root{
+    --bg-color: white;
+
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: white;
+}
+
+h1{
+    font-size: 40px;
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    max-width: max-content;
+}
+
+h1::before,
+h1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before{
+    background: white;
+    animation: typewriter 4s steps(28) forwards;
+}
+
+@keyframes typewriter{
+    to {
+        left: 100%; 
+    }
+}
+
+.mynickname{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.connect_inside{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 590;
+    
+}
+
+a.connect{
+    border-radius: 1em;
+    background-color: rgb(236, 235, 235);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.myprofile{
+    display: none;
+}
+
